@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sample</title>
+    <script>
+      function abc() {
+        document.getElementById("a").textContent = "あ";
+        return false;
+      }
+    </script>
+  </head>
+  <body>
+    <form onsubmit="return abc()">
+      <input type="text" />
+    </form>
+    <div id="a"></div>
+  </body>
+</html>
